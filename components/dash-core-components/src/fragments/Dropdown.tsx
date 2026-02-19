@@ -437,6 +437,7 @@ const Dropdown = (props: DropdownProps) => {
         <Popover.Root open={isOpen} onOpenChange={handleOpenChange}>
             <Popover.Trigger asChild>
                 <button
+                    tabIndex={0}
                     id={id}
                     ref={dropdownContainerRef}
                     disabled={disabled}
